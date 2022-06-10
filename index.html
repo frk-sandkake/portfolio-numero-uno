@@ -1,10 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="js" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home of frk.SandKake's portfolio</title>
+    <meta name="description" content="Welcome to frk.SandKake's first ever portfolio">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/mobile-menu.js" defer></script>
+    <script src="https://kit.fontawesome.com/a4752bb561.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<header id="primaryHeader" class="primary-header container">
+    <a id="logoHomeButton" aria-label="Logo home button" role="link" href="index.html">
+        <img id="primaryLogo" role="img" src="./uploads/logo-desktop.svg" width="146" height="64" alt="My logo with the text, frk.SandKake in VT323 font. Underneath there are 5 unicorns in different opacity, with the last one fully visible, imitating a static loader."/>
+    </a>
+    <nav id="primaryNav" class="primary-nav" role="navigation">
+        <button id="toggleMobileMenu" class="hidden-btn" aria-expanded="false" aria-controls="menu">
+            <span class="span-btn">menu</span>
+        </button>
+        <ul id="menu-0" role="menubar">
+            <li id="item-1" role="none" class="nav__link active">
+                <a id="link-1" href="index.html" class="nav__link active" role="menuitem" tabindex="0">
+                    home
+                </a>
+            </li>
+            <li id="item-4" role="none">
+                <a id="link-4" href="contact.html" role="menuitem" tabindex="-1">
+                    connect
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="container main-content" role="main">
+    <h1>
+        Portfolio 1.0
+    </h1>
+    <article class="intro-content" aria-label="Introduction of website" role="article">
+        <h2 class="subheading" role="doc-subtitle">
+            Linda Sandaker
+        </h2>
+        <div class="image-wrapper">
+        </div>
+        <h3>jr. FrontEnd Developer</h3>
+        <p>
+            Scroll to get to Projects and Bio
+        </p>
+        <div class="topics-wrapper" aria-label="Icons of Frontend and Topics" role="none">
+            <div class="frontend" aria-label="FrontEnd I'm working with" role="graphics-object">
+                <i aria-label="JavaScript" role="img" class="fa-brands fa-gradient fa-js-square"></i>
+                <i aria-label="CSS3" role="img" class="fa-brands fa-gradient fa-css3-alt"></i>
+                <i aria-label="GitHub" role="img" class="fa-brands fa-gradient fa-github-square"></i>
+                <i aria-label="Sourcetree" role="img" class="fa-brands fa-gradient fa-sourcetree"></i>
+                <i aria-label="Figma" role="img" class="fa-brands fa-gradient fa-figma"></i>
+            </div>
+            <div class="topics" aria-label="Topics I'm interested in" role="graphics-object">
+                <i aria-label="Environmental" role="img" class="fa-solid fa-earth-europe"></i>
+                <i aria-label="Science" role="img" class="fa-solid fa-brain"></i>
+                <i aria-label="Relationships" role="img" class="fa-solid fa-masks-theater"></i>
+                <i aria-label="Technology" role="img" class="fa-solid fa-code"></i>
+            </div>
+        </div>
+    </article>
+    <section class="projects__container" aria-label="Projects I've been working on" role="presentation">
+        <h2>
+            Projects:
+        </h2>
+        <div aria-label="Three projects" class="wrapper-flex" role="none">
+            <article class="project-content" aria-label="Here will be a project">
+                <h3>SquareEyes</h3>
+                <p><a href="https://squareeyes-cross-course-lindamsandaker.netlify.app/">Link to website</a></p>
+                <p><a href="https://github.com/LindaMSandaker/squareeyes.git">Link to GitHub repo</a></p>
+            </article>
+            <article class="project-content" aria-label="Here will be a project">
+                <h3>Community Science Museum</h3>
+                <p><a href="https://fervent-blackwell-3e5b80.netlify.app/">Link to website</a></p>
+                <p><a href="https://github.com/LindaMSandaker/community-science-museum.git">Link to GitHub repo</a></p>
+            </article>
+            <article class="project-content" aria-label="Here will be a project">
+                <h3>Portfolio with a blog</h3>
+                <p><a href="https://graceful-manatee-6b7f64.netlify.app">Link to website</a></p>
+                <p><a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-LindaMSandaker.git">Link to GitHub repo</a></p>
+            </article>
+        </div>
+    </section>
+    <section class="" role="region">
+        <img class="care-bears-image" src="/uploads/care-bears-444x459.png" alt="two care bears playing in the skys" width="444" height="459">
+        <h2>My story</h2>
+        <p>
+            Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet gravida,
+            orci amet iaculis aptent blandit quam accumsan donec in facilisis.
+        </p>
+        <p>
+            Cursus ante curabitur aliquet condimentum tincidunt facilisis non cubilia lorem et pretium
+            aliquam phasellus ipsum metus quisque auctor tristique donec nibh.
+            <br><br>
+        </p>
+        <p class="text-right">
+            XOXO <br>
+           frk.SandKake
+        </p>
+    </section>
+    <!--<section>
+        <h2>Renume</h2>
+        <article>
+            <h3>Year XXXX-</h3>
+            <div class="wrapper">
+                <ul>Learning
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                </ul>
+                <ul>Doing
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <h3>Year XXXX-XXXX</h3>
+            <div class="wrapper">
+                <ul>Learning
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                </ul>
+                <ul>Doing
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                        <small>Lorem ipsum dolor sit amet</small>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>-->
+<!--
+    <section class="carousel" aria-label="latest blog posts" data-carousel>
+        <h2>
+            Latest thoughts:
+        </h2>
+        <p class="sr-only">
+            Carousel with 1 slide shown at a time.
+            Use the Previous and Next buttons to navigate.
+        </p>
+        <div class="carousel-buttons">
+            <button class="carousel-btn previous" aria-label="Previous slide" data-carousel-button-previous>
+                <i class="fa-solid fa-chevron-left"></i>
+            </button >
+            <button class="carousel-btn next" aria-label="Next slide" data-carousel-button-next>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="slides" aria-live="polite" data-carousel-slides-container>
+            &lt;!&ndash; html in posts-carousel.js &ndash;&gt;
+        </div>
+    </section>
+-->
+</main>
+<footer id="footer" class="container">
+    <a id="logoHome" aria-label="Logo home button" role="link" href="index.html">
+        <img id="secondaryLogo" role="img" src="./uploads/logo-desktop.svg" width="146" height="64" alt="My logo with the text, frk.SandKake in VT323 font. Underneath there are 5 unicorns in different opacity, with the last one fully visible, imitating a static loader."/>
+    </a>
+    <small class="credits">
+        <strong>Photos:</strong> Private collection
+        <strong>Icons:</strong>
+        <a href="https://fontawesome.com">Font Awesome</a>
+    </small>
+    <div class="divider" role="none"></div>
+    <small class="copyright"><span class="c-icon">C</span>2022 Linda Sandaker</small>
+</footer>
 </body>
 </html>

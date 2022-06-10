@@ -1,0 +1,300 @@
+:root {
+    --clr-primary-cyan: hsla(181, 71%, 23%, 1);
+    --clr-primary-charcole: hsla(158, 8%, 19%, 1);
+    --clr-primary-peach: hsla(29, 100%, 80%, 1);
+    --clr-primary-aquamarine: hsla(164, 100%, 78%, 1);
+    --clr-primary-gainsboro: hsla(164, 33%, 86%, 1);
+    --clr-green-success: hsla(144, 100%, 78%, 1);
+    --clr-red-error: hsl(0, 83%, 82%);
+    --clr-gradient-charcole-cyan: linear-gradient(180deg, #2C3431 0%, #293A38 4.92%, #25413F 10.76%, #224645 14.74%, #1F4C4B 19.88%, #1B5252 24.56%, #185858 29.47%, #155D5F 34.38%, #116466 39.78%, #116466 60.76%, #155C5D 67.11%, #195757 71.78%, #1B5151 75.99%, #1F4C4B 80.43%, #224644 85.57%, #263F3D 90.95%, #293A38 94.93%, #2C3431 100%);
+    --clr-radial-peach: radial-gradient(50% 50% at 50% 50%, #FFE5CC 0%, #FFE5CC 0.01%, rgba(255, 203, 154, 0.95) 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--clr-primary-cyan);
+    background: var(--clr-gradient-charcole-cyan);
+    color: hsl(164, 33%, 91%);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 100%;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main-content {
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.sr-only {
+    visibility: hidden;
+}
+
+/** Typography */
+h1, h2 {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: var(--clr-primary-aquamarine);
+}
+
+h1 {
+    font-size: min(max(1.7rem, 5vw), 2.3rem);
+}
+
+h2 {
+    font-size: min(max(1.3rem, 4vw), 1.8rem);
+}
+
+h3 {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    font-size: min(max(1rem, 3vw), 1.3rem);
+    color: var(--clr-primary-aquamarine);
+}
+
+.subheading {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    color: var(--clr-primary-peach);
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: min(max(.9rem, 2vw), 1.1rem);
+    max-width: 70ch;
+}
+
+small {
+    font-family: "Courier New", monospace;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.text-right {
+    text-align: right;
+    padding-right: 4rem;
+}
+
+/** buttons, Icons images */
+.btn-primary {
+    width: max-content;
+    border: groove #1FB8BC;
+    border-bottom-color: #C3F3CDFF;
+    border-radius: .2rem;
+    background: var(--clr-gradient-charcole-cyan);
+    background: -webkit-gradient(linear, left top, left bottom, from(#1FB8BC), to(#c3f3cd));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 1rem;
+    box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.25);
+    cursor: pointer;
+}
+
+.fa-solid, .fa-brands {
+    padding: .25rem;
+    margin: .25rem;
+    font-size: 32px;
+}
+
+.fa-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#1FB8BC), to(#c3f3cd));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/** Primary-header - Global styles */
+.primary-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+#menu-0 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-0 a {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.1rem;
+    pointer-events: all;
+    padding: 0 .5em;
+    margin: 0 .2em;
+    color: var(--clr-primary-peach);
+    text-shadow: 3px -3px hsla(28.8, 100%, 18.8%, 0.24);
+}
+
+#menu-0 li:hover, #menu-0 li:focus {
+    color: hsla(181, 71%, 63%, 1);
+    opacity: 1;
+    transform: scale(1.1);
+    transition: color .3s ease-in-out, transform .3s ease-in-out;
+}
+
+#menu-0 .active {
+    color: hsla(181, 71%, 63%, 1);
+    transform: scale(1.2);
+    transition: .01s;
+}
+
+/** Smaller devices - Mobile */
+@media screen and (max-width: 768px) {
+    .primary-nav button {
+        position: absolute;
+        top: 1.1em;
+        right: 1em;
+        width: 48px;
+        height: 48px;
+        padding: .5em;
+        margin: 0;
+        border: 0;
+        cursor: pointer;
+        background: transparent url(/uploads/nav-mobile-icon.svg) no-repeat center;
+    }
+
+    .primary-nav button span {
+        position: absolute;
+        clip: rect(1px 1px 1px 1px);
+        border: 0;
+        padding: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    #menu-0 {
+        position: absolute;
+        z-index: 1;
+        top: 64px;
+        right: 0;
+        padding: 2em 1em;
+        border-radius: .4em;
+        width: fit-content;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        background: var(--clr-gradient-charcole-cyan);
+    }
+
+    #menu-0 li {
+        padding: 1em;
+    }
+
+    .js .hidden-btn {
+        visibility: visible;
+    }
+
+    .js #menu-0 {
+        visibility: hidden;
+    }
+
+    #menu-0.is-active {
+        visibility: visible;
+    }
+}
+
+/** Larger devices - Desktop */
+@media screen and (min-width: 769px) {
+    .js ul {
+        visibility: visible;
+    }
+
+    .js .hidden-btn {
+        visibility: hidden;
+    }
+
+    #menu-0 {
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+/** Primary header - End */
+
+/** Footer */
+footer {
+    padding: 1rem;
+    text-align: right;
+}
+
+
+.divider {
+    width: 100%;
+    height: .1em;
+    background-color: var(--clr-primary-peach);
+}
+/***/
+
+.divider-short {
+    width: 10%;
+    height: .1em;
+    background-color: var(--clr-primary-peach);
+}
+
+/** Index.html */
+.intro-content {
+    margin: 0;
+    padding: 1rem;
+}
+
+.portfolio-banner {
+    width: 70%;
+    height: auto;
+    opacity: 50%;
+    position: absolute;
+    top: 64px;
+}
+.topics-wrapper {
+    margin: 1rem;
+
+}
+.frontend, .topics {
+    display: block;
+    width: max-content;
+    height: max-content;
+}
+
+.frontend {
+    margin-top: 1rem;
+}
+
+.wrapper-flex {
+    display: flex;
+}
+
+.projects__container {
+    margin: 1rem auto;
+    padding: 0.5rem;
+}
+
+.care-bears-image {
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 6rem;
+}
+/***/
