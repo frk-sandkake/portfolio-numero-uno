@@ -1,0 +1,105 @@
+.main-content {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .5rem;
+}
+
+/** Form */
+.contact-form__container {
+    margin: 2rem .5rem;
+}
+
+form {
+    max-width: 450px;
+    padding: 2rem .5rem 3rem;
+    margin: 0 auto;
+    border: .3rem groove var(--clr-primary-peach);
+    border-radius: .2rem;
+    box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.25);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    color: hsl(165, 86%, 86%);
+}
+
+input,
+textarea {
+    width: 100%;
+    color: hsla(165, 29%, 97%, 1);
+    background-color: var(--clr-primary-charcole);
+    border: .01rem solid var(--clr-primary-peach);
+    border-radius: .2rem;
+    padding: .5rem;
+    font-family: "Courier New", monospace;
+    box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.25);
+}
+
+.form-control__input,
+.form-control__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .5rem;
+}
+
+.form-control__input .error {
+    color: var(--clr-red-error);
+    font-family: "Courier New", monospace;
+    font-style: italic;
+    padding: .25rem;
+    text-shadow: 3px -3px hsla(28.8, 100%, 18.8%, 0.24);
+}
+
+.form-control__input.success input,
+.form-control__input.success textarea {
+    border: .05rem solid var(--clr-green-success);
+    color: var(--clr-green-success);
+}
+
+.form-control__input.error input,
+.form-control__input.error textarea {
+    border: .05rem solid var(--clr-red-error);
+    color: var(--clr-red-error);
+}
+
+.form-control__btn .message-sent {
+    color: inherit;
+    font-family: "Courier New", monospace;
+    font-weight: 500;
+    font-style: italic;
+    padding: 0 1rem;
+    margin: 1rem 2rem;
+    text-align: center;
+}
+/** Form - End */
+
+.connect__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem .5rem;
+}
+
+.divider-short {
+    width: 70%;
+    height: .1em;
+    margin-left: .5rem;
+    background-color: var(--clr-primary-peach);
+}
+
+.connect-icons {
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.connect-icons .fa-brands {
+    font-size: 52px;
+}

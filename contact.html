@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Connect page | frk.SandKake's portfolio</title>
+    <meta name="description" content="Project Exam 1 by LindaMSandaker. A portfolio with a blog">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
+    <script type="text/javascript" src="./js/mobile-menu.js" defer></script>
+    <script type="text/javascript" src="js/validation.js" defer></script>
+    <script type="text/javascript" src="js/handlers/error-success.js" defer></script>
+    <script src="https://kit.fontawesome.com/a4752bb561.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header id="primaryHeader" class="primary-header container">
+    <a id="logoHomeButton" aria-label="Logo home button" role="link" href="index.html">
+        <img id="primaryLogo" role="img" src="./uploads/logo-desktop.svg" width="146" height="64" alt="My logo with the text, frk.SandKake in VT323 font. Underneath there are 5 unicorns in different opacity, with the last one fully visible, imitating a static loader."/>
+    </a>
+    <nav id="primaryNav" class="primary-nav" role="navigation">
+        <button id="toggleMobileMenu" class="hidden-btn" aria-expanded="false" aria-controls="menu">
+            <span class="span-btn">menu</span>
+        </button>
+        <ul id="menu-0" role="menubar">
+            <li id="item-1" role="none">
+                <a id="link-1" href="index.html" role="menuitem" tabindex="0">
+                    home
+                </a>
+            </li>
+            <li id="item-2" role="none" class="active">
+                <a id="link-4" href="contact.html" class="active" role="menuitem" tabindex="-1">
+                    connect
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="container main-content flex-wrap" role="main">
+    <h1>
+        Lets connect!
+    </h1>
+    <section class="contact-form__container" role="region">
+        <h2>Send me a message</h2>
+        <form id="contactForm" action="#" method="post" role="form" class="contact-form" data-contact-form>
+            <fieldset class="contact-fieldset">
+                <legend class="sr-only">Your Details</legend>
+                <div class="form-control__input" role="group">
+                    <label for="name">fullName</label>
+                    <input id="name" name="name" type="text" placeholder="input name" />
+                    <div class="error" aria-live="polite"></div>
+                    <div class="success" aria-live="polite"></div>
+                </div>
+                <div class="form-control__input" role="group">
+                    <label for="email">email</label>
+                    <input id="email" name="email" type="email" placeholder="input email" />
+                    <div class="error" aria-live="polite"></div>
+                </div>
+            </fieldset>
+            <fieldset class="contact-fieldset">
+                <legend class="sr-only">Your Message</legend>
+                <div class="form-control__input" role="group">
+                    <label for="subject">subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="input subject"/>
+                    <div class="error" aria-live="polite"></div>
+                </div>
+                <div class="form-control__input" role="group">
+                    <label for="message">message</label>
+                    <textarea id="message" name="message" cols="30" rows="5"></textarea>
+                    <div class="error" aria-live="polite"></div>
+                </div>
+                <div class="form-control__btn">
+                    <input id="submit" type="submit" class="btn btn-primary" value="sendMessage">
+                    <div class="message-sent" aria-live="polite"></div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <section class="connect__container">
+        <h2>
+            Or find me here;
+        </h2>
+        <div class="divider-short" role="none"></div>
+        <div aria-label="links to my github and linkedin" class="connect-icons" role="none">
+            <i class="fa-brands fa-github-square"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+</main>
+<footer id="footer" class="container">
+    <a id="logoHome" aria-label="Logo home button" role="link" href="index.html">
+        <img id="secondaryLogo" role="img" src="./uploads/logo-desktop.svg" width="146" height="64" alt="My logo with the text, frk.SandKake in VT323 font. Underneath there are 5 unicorns in different opacity, with the last one fully visible, imitating a static loader."/>
+    </a>
+    <small class="credits">
+        <strong>Photos:</strong>
+        <a href="https://unsplash.com">Unsplash</a>
+        <strong>Icons:</strong>
+        <a href="https://fontawesome.com">Font Awesome</a>
+    </small>
+    <div class="divider" role="none"></div>
+    <small class="copyright"><span class="c-icon">C</span>2022 Linda Sandaker</small>
+</footer>
+</body>
+</html>
